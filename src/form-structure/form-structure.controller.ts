@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Put, Query } from '@nestjs/common';
 import { AddFormStructureDto } from './dto/add-form-structure.dto';
 import { FormStructureService } from './form-structure.service';
 
@@ -18,5 +18,18 @@ export class FormStructureController {
   @Get('getAllFormStructures')
   async getAllFormStructures(): Promise<any> {
     return this.formStructureService.getAllFormStructures();
+  }
+
+  @Put('publishFormStructure')
+  async publishFormStructures(
+    @Query('formId') formId: string,
+    @Query('isPublished') isPublished: boolean,
+  ): Promise<any> {
+    return this.formStructureService.publishFormStructures(formId, isPublished);
+  }
+
+  @Get('getAllPublishedFormStructures')
+  async getAllPublishedFormStructures(): Promise<any> {
+    return this.formStructureService.getAllPublishedFormStructures();
   }
 }
