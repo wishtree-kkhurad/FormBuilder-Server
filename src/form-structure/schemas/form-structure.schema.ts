@@ -14,7 +14,7 @@ export class FormStructure {
   @Prop({ default: false })
   isPublished: boolean;
 
-  @Prop({ type: {} })
+  @Prop({type: {}})
   formFieldsJson: any;
 
   @Prop({ default: Date.now })

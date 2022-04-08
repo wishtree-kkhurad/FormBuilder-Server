@@ -4,7 +4,7 @@
 import { IsNotEmpty, IsString } from 'class-validator';
 
 export class AddFormStructureDto {
-  formId: string;
+//   formId: string;
 
 //   @IsNotEmpty()
 //   formTitle: string;
