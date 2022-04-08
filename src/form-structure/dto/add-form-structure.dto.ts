@@ -6,8 +6,9 @@ import { IsNotEmpty, IsString } from 'class-validator';
 export class AddFormStructureDto {
 //   formId: string;
 
-//   @IsNotEmpty()
-//   formTitle: string;
+  // @IsNotEmpty()
+  // @IsString()
+  // formTitle: string;
 
 //   @IsNotEmpty()
 //   @IsString()
