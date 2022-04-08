@@ -11,15 +11,11 @@ export class FormStructure {
   @Prop({ default: uuidv4() })
   formId: string;
 
-  @Prop()
-  @IsString()
-  formTitle: string;
-
   @Prop({ default: false })
   isPublished: boolean;
 
-  @Prop()
-  formFieldsJson: object;
+  @Prop({ type: {} })
+  formFieldsJson: any;
 
   @Prop({ default: Date.now })
   createdAt: Date;

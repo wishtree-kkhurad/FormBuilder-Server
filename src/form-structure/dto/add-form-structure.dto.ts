@@ -7,9 +7,9 @@ export class AddFormStructureDto {
   formId: string;
 
 //   @IsNotEmpty()
-  formTitle: string;
+//   formTitle: string;
 
 //   @IsNotEmpty()
-  @IsString()
-  formFieldsJson: object;
+//   @IsString()
+  formFieldsJson: any;
 }
